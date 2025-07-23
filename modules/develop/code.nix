@@ -28,5 +28,8 @@
     gcc
     cmake
     gnumake
+    pkg-config
+    zlib
+    zlib.dev
   ];
 }

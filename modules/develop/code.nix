@@ -25,5 +25,8 @@
     uv
     nixd
     nodejs_22
+    gcc
+    cmake
+    gnumake
   ];
 }

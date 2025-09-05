@@ -1,1 +1,2 @@
 * This my nixos config.
+Install emacs so slowly, so slowly. You'd better install emacs with another way.

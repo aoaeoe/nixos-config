@@ -11,13 +11,13 @@
     # p7zip
 
     # Broswer
-    google-chrome
+    google-chrome # chromium
 
     # Chat
     # telegram-desktop
 
     # Editor
-    kate
+    # kate
     vim
     kdePackages.kate
     neovim
@@ -41,7 +41,7 @@
     (python3.withPackages (ps: with ps; [
       ipython
     ]))
-    
+
     # Terminal
     alacritty
     ghostty

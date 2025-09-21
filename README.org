@@ -8,6 +8,6 @@ config proxy, and set global http prox, for example:
   export ALL_PROXY=socks5://192.168.110.73:7890
 #+end_src
 
-Then run: sudo nixos-rebuild switch --flake .#evims
+Then run: =sudo nixos-rebuild switch --flake .#evims=
 
-If it appears that building nixos-install (fixupPhase): checking for references to /build/ in /nix/store/…, you can `contrl + c` and sudo nixos-rebuild switch --flake .#evims
+If it appears that building nixos-install (fixupPhase): checking for references to /build/ in /nix/store/…, you can =contrl + c= and sudo nixos-rebuild switch --flake .#evims

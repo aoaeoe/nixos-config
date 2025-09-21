@@ -10,8 +10,6 @@
       "exfat"
     ];
 
-    # Kernel Version
-    # Always use the latest version
     kernelPackages = pkgs.linuxPackages;
 
     kernelParams = [

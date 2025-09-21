@@ -12,8 +12,6 @@
       material-design-icons
       font-awesome
 
-      # Noto for no tofu
-      # Noto Sans/Serif CJK SC/TC/HK/JP/KR
       noto-fonts # No Chinese
       noto-fonts-cjk-sans # Chinese
       noto-fonts-emoji
@@ -28,12 +26,6 @@
 
       # Other Fonts
       lxgw-wenkai
-      # liberation_ttf
-      # arkpandora_ttf
-
-      # Font
-      # keep reporting license issue,must add license in nixpkgs
-      # joypixels
 
       # Code and Symbol
       cascadia-code
@@ -53,9 +45,6 @@
 
     ];
 
-    # user defined fonts
-    # the reason there's Noto Color Emoji everywhere is to override DejaVu's
-    # B&W emojis that would sometimes show instead of some Color emojis
     fontconfig.defaultFonts = {
       serif = [ "FiraCode Nerd Font" "FiraCode Nerd Font" ];
       sansSerif = [ "FiraCode Nerd Font" "FiraCode Nerd Font" ];

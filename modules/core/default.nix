@@ -5,7 +5,6 @@
   boot.loader.grub.configurationLimit = lib.mkDefault 5;
   
   nix = {
-    # Do garbage collection weekly to keep disk usage low
     gc = {
       automatic = lib.mkDefault true;
       dates = lib.mkDefault "weekly";
@@ -13,14 +12,10 @@
     };
 
     settings = {
-      # Manual optimise storage: nix-store --optimise
-      # https://nixos.org/manual/nix/stable/command-ref/conf-file.html#conf-auto-optimise-store
       auto-optimise-store = true;
 
-      # enable flakes globally
       experimental-features = [ "nix-command" "flakes" ];
 
-      # trusted users
       trusted-users = ["evims"];
 
       # Protect nix-shell against garbage collection
@@ -29,11 +24,7 @@
     };
   };
 
-  # Allow unfree packages,it will be enable in system.nix
-  # nixpkgs.config.allowUnfree = lib.mkDefault true;
-
   i18n = {
-    # Select internationalisation properties.
     defaultLocale = "en_US.UTF-8";
     extraLocaleSettings = {
       LC_CTYPE = "zh_CN.UTF-8";

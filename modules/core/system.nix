@@ -8,7 +8,6 @@
     hardwareClockInLocalTime = true;
   };
 
-  # We need to enable unfree packages
   nixpkgs.config = {
     allowUnfree = lib.mkForce true;
     joypixels.acceptLicense = true;

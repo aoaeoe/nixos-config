@@ -14,11 +14,7 @@
   develop = ../modules/develop;
   editor = ../modules/editor;
   user = ../modules/user;
-  # Modules: Predefined
-  ## Use nur overlay instead of nur module
-  ## So that the home manager config files can use nur pkgs too
-  ## Even I decided not to install any pkgs in home manager
-  ## nurModule = inputs.nur.nixosModules.nur;
+
   nixOverlay = { 
     nixpkgs.overlays = [ 
       inputs.nur.overlays.default
@@ -52,16 +48,6 @@
       ];
     };
   };
-  
-  # Use pkgs-unstable as specialArgs
-  # makeSystem = system: {
-  #   pkgs-unstable = import nixpkgs-unstable {
-  #     inherit system;
-  #     config = {
-  #       allowUnfree = true;
-  #     };
-  #   };
-  # };
   
 in {
   # All the hosts list as follows

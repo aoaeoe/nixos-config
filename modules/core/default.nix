@@ -1,9 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  # NixOS's core configuration for all of my machines
-
-  # for nix server, we do not need to keep too much generations
   # boot.loader.grub.conLimit = lib.mkDefault 10;
   boot.loader.grub.configurationLimit = lib.mkDefault 5;
   

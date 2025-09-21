@@ -17,7 +17,6 @@
     # telegram-desktop
 
     # Editor
-    # kate
     vim
     kdePackages.kate
     neovim
@@ -50,21 +49,7 @@
     git # used by nix flakes
 
     # RDP
-    # libsForQt5.krdc
-
-    # Polkit
-    # libsForQt5.polkit-kde-agent
-
     # Disk
-    # libsForQt5.filelight
-
-    # SDDM Theme Dependencies
-     # SDDM Theme Dependencies
-#     environment.systemPackages = [
-#       pkgs.qt6Packages.qtquickcontrols2
-#       pkgs.qt6Packages.qtgraphicaleffects
-# #       pkgs.blueman
-#     ];
     # KDE Apperence
     lightly-qt
 

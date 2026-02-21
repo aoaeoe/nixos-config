@@ -14,9 +14,7 @@
 
       noto-fonts # No Chinese
       noto-fonts-cjk-sans # Chinese
-      # noto-fonts-emoji
       noto-fonts-color-emoji
-      #noto-fonts-extra
       noto-fonts
 
       # Adobe SiYuan
@@ -38,7 +36,6 @@
 
       # nerdfonts
       nerd-fonts.fira-code
-#       nerd-fonts.source-code-pro
 
       #(pkgs.callPackage ../../fonts/icomoon-feather-icon-font.nix { })
 

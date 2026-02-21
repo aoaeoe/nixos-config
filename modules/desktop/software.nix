@@ -17,7 +17,6 @@
     # xdg-utils
     # xorg.xrandr
     glibcLocales
-    # Linux Basic
     linuxHeaders
     linux-firmware
     # flameshot
@@ -30,8 +29,6 @@
     git # used by nix flakes
     # RDP
     # Disk
-    # KDE Apperence
-    # lightly-qt
     # vlc
     # obs-studio
     # ffmpeg

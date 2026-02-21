@@ -57,12 +57,18 @@
 #     "zh_HK.UTF-8/UTF-8"
 #   ];
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-
+  # Enable the X11 windowing system. If use wayland, services.xserver.enable = false;
+  services.xserver.enable = false;
+  # No errors, but it’s not taking effect either. "sugar-candy"
+  environment.systemPackages = with pkgs; [
+    sddm-sugar-candy
+  ];
   # Enable the Plasma 5 Desktop Environment.
-  services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    theme = "sugar-candy";
+  };
   services.desktopManager.plasma6.enable = true;
 
 

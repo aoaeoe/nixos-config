@@ -31,7 +31,7 @@
     # RDP
     # Disk
     # KDE Apperence
-    lightly-qt
+    # lightly-qt
     # vlc
     # obs-studio
     # ffmpeg

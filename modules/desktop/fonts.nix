@@ -14,8 +14,10 @@
 
       noto-fonts # No Chinese
       noto-fonts-cjk-sans # Chinese
-      noto-fonts-emoji
-      noto-fonts-extra
+      # noto-fonts-emoji
+      noto-fonts-color-emoji
+      #noto-fonts-extra
+      noto-fonts
 
       # Adobe SiYuan
       source-sans # No Chinese. Including `Source Sans 3` `Source Sans Pro` `Source Sans 3 VF`

@@ -9,7 +9,7 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  };
+};
 #   boot.loader ={
 #     efi = {
 #       canTouchEfiVariables = false;
@@ -58,26 +58,14 @@
 #   ];
 
   # Enable the X11 windowing system. If use wayland, services.xserver.enable = false;
-  services.xserver.enable = false;
-  # No errors, but it’s not taking effect either. "sugar-candy"
-  environment.systemPackages = with pkgs; [
-    sddm-sugar-candy
-  ];
-  # Enable the Plasma 5 Desktop Environment.
-  # services.displayManager.sddm.enable = true;
-  services.displayManager.sddm = {
+  services.xserver.enable = true;
+  services.xserver.displayManager.sddm = {
     enable = true;
-    theme = "sugar-candy";
+    theme = "astronaut";
   };
-  services.desktopManager.plasma6.enable = true;
-
-
-  # Configure keymap in X11
-  # services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e,caps:escape";
-
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
+  environment.systemPackages = with pkgs; [
+    sddm-astronaut
+  ];
 
   # Enable sound.
 #   sound.enable = false;
@@ -146,4 +134,4 @@
   system.stateVersion = "25.05"; # Did you read the comment?
 
   time.hardwareClockInLocalTime = true;
-}
+

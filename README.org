@@ -13,3 +13,5 @@ Then run: =sudo nixos-rebuild switch --flake .#evims=
 If =building nixos-install (fixupPhase): checking for references to /build/ in /nix/store/…= appears, press =contrl + c= and sudo nixos-rebuild switch --flake .#evims.
 
 nix flake update && sudo nixos-rebuild switch --flake .
+
+nixos version: 26.05+

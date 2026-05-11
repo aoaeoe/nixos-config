@@ -15,7 +15,7 @@
     desktopManager.plasma6.enable = true;
 
     # Enable Sddm
-    displayManager ={
+    displayManager = {
       sddm.enable = true;
       #sddm.theme = "${import ./sddm-theme.nix { inherit pkgs;}}";
     };
@@ -24,7 +24,7 @@
       enable = true;
       alsa.enable = true;
       alsa.support32Bit = true;
-      pulse.enable = true;
+      pulse.enable = true;  # 用新的模拟它
 
       #media-session.enable = true;
     };
@@ -36,10 +36,8 @@
 
     # sysstat
     sysstat.enable = true;
-  };
 
-  services = {
-    pulseaudio.enable = false;
+    pulseaudio.enable = false;  #　关掉老的音频服务
   };
 
   programs = {

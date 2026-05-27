@@ -24,7 +24,7 @@
       enable = true;
       alsa.enable = true;
       alsa.support32Bit = true;
-      pulse.enable = true;  # 用新的模拟它
+      pulse.enable = true;  # use new mode
 
       #media-session.enable = true;
     };
@@ -37,7 +37,7 @@
     # sysstat
     sysstat.enable = true;
 
-    pulseaudio.enable = false;  #　关掉老的音频服务
+    pulseaudio.enable = false;  #　close old video service
   };
 
   programs = {

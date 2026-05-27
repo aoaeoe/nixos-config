@@ -10,52 +10,50 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 };
-#   boot.loader ={
-#     efi = {
-#       canTouchEfiVariables = false;
-#       efiSysMountPoint = "/boot";
-#     };
-#     grub = {
-#       enable = true;
-#       devices = [ "nodev" ];
-#       efiSupport = true;
-#     };
-#   };
+  #   boot.loader ={
+  #     efi = {
+  #       canTouchEfiVariables = false;
+  #       efiSysMountPoint = "/boot";
+  #     };
+  #     grub = {
+  #       enable = true;
+  #       devices = [ "nodev" ];
+  #       efiSupport = true;
+  #     };
+  #   };
 
   networking.hostName = "evims";   # Define your hostname.
-
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Set your time zone.
   time.timeZone = "Asia/Shanghai";
 
-
   # Select internationalisation properties.
   i18n.defaultLocale = "zh_CN.UTF-8";
-#   i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-    # font = "Lat2-Terminus16";
-    # keyMap = "us";
-    useXkbConfig = true; # use xkbOptions in tty.
-  };
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "zh_CN.UTF-8";
-    LC_IDENTIFICATION = "zh_CN.UTF-8";
-    LC_MEASUREMENT = "zh_CN.UTF-8";
-    LC_MONETARY = "zh_CN.UTF-8";
-    LC_NAME = "zh_CN.UTF-8";
-    LC_NUMERIC = "zh_CN.UTF-8";
-    LC_PAPER = "zh_CN.UTF-8";
-    LC_TELEPHONE = "zh_CN.UTF-8";
-    LC_TIME = "zh_CN.UTF-8";
-  };
+  #   i18n.defaultLocale = "en_US.UTF-8";
+    console = {
+      # font = "Lat2-Terminus16";
+      # keyMap = "us";
+      useXkbConfig = true; # use xkbOptions in tty.
+    };
+    i18n.extraLocaleSettings = {
+      LC_ADDRESS = "zh_CN.UTF-8";
+      LC_IDENTIFICATION = "zh_CN.UTF-8";
+      LC_MEASUREMENT = "zh_CN.UTF-8";
+      LC_MONETARY = "zh_CN.UTF-8";
+      LC_NAME = "zh_CN.UTF-8";
+      LC_NUMERIC = "zh_CN.UTF-8";
+      LC_PAPER = "zh_CN.UTF-8";
+      LC_TELEPHONE = "zh_CN.UTF-8";
+      LC_TIME = "zh_CN.UTF-8";
+    };
 
-#   i18n.supportedLocales = [
-#     "en_US.UTF-8/UTF-8"
-#     "zh_CN.UTF-8/UTF-8"
-#     "zh_TW.UTF-8/UTF-8"
-#     "zh_HK.UTF-8/UTF-8"
-#   ];
+  #   i18n.supportedLocales = [
+  #     "en_US.UTF-8/UTF-8"
+  #     "zh_CN.UTF-8/UTF-8"
+  #     "zh_TW.UTF-8/UTF-8"
+  #     "zh_HK.UTF-8/UTF-8"
+  #   ];
 
   # Enable the X11 windowing system. If use wayland, services.xserver.enable = false;
   services.xserver.enable = true;
@@ -68,7 +66,7 @@
   ];
 
   # Enable sound.
-#   sound.enable = false;
+  # sound.enable = false;
   services.pulseaudio.enable = false;
 
   # Enable touchpad support (enabled default in most desktopManager).

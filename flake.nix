@@ -1,6 +1,6 @@
 {
   description = "Evims's NixOS configuration";
-  
+
   outputs = {
     self,
     nixpkgs,
@@ -16,14 +16,14 @@
         nixosConfigurations = import ./hosts inputs;
       };
     });
-  
+
   # nixConfig only affects the flake itself,not the system configuration
   nixConfig ={
     # enable nixcomman and flakes for nixos-rebuild switch --flake
     experimental-features = [ "nix-command" "flakes"];
     # replace official cache with mirrors located in China
     substituters = [
-      "https://mirror.sjtu.edu.cn/nix-channels/store"
+      "https://mirror.ustc.edu.cn/nix-channels/store"
       "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
       "https://mirrors.bfsu.edu.cn/nix-channels/store"
       # "https://cache.nixos.org/"
@@ -31,7 +31,7 @@
   };
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    
+
     # Home manager,used for managing user configuration
     home-manager = {
       url = "github:nix-community/home-manager";

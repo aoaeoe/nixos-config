@@ -6,7 +6,7 @@
     resolvconf.dnsExtensionMechanism = false;
     firewall = {
       enable = true;
-      # allowedTCPPorts = [ ... ];
+      allowedTCPPorts = [ 9002 ];
       # allowedUDPPorts = [ ... ];
     };
   };
